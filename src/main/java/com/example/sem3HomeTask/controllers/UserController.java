@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")//localhost:8080/user
+@RequestMapping(value = {"/user", "/tasks"}) // localhost:8080/user и localhost:8080/tasks
 public class UserController {
 
 
