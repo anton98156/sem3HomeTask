@@ -41,7 +41,7 @@ public class TaskController {
         return service.filterUsersByAge(users, age);
     }
 
-    @GetMapping("/filter/{age}")//localhost:8080/tasks/filter/{age}
+    @GetMapping("/calc")//localhost:8080/tasks/calc
     public double calculateAverageAge() {
         List<User> users = service.getRepository().getUsers();
         return service.calculateAverageAge(users);
