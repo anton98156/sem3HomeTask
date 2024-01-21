@@ -21,10 +21,11 @@ public class RegistrationService {
         return dataProcessingService;
     }
 
+    // Создание пользователя в системе.
     public void processRegistration(String name, int age, String email) {
         User user = userService.createUser(name, age, email);
         dataProcessingService.addUserToList(user);
-        notificationService.sendNotification("");
+        notificationService.sendNotification("Пользователь добавлен");
     }
 
 }
